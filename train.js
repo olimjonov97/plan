@@ -1,2 +1,2 @@
 // A-task
-console.log("Train Js start")
+// console.log("Train Js start")
