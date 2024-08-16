@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: center;
   background-color: #f0f0f6;
+  /* Background */
 }
 
 .main_frame {
@@ -19,7 +20,7 @@
   margin-top: 2px;
 
   /* Background */
-  background: #f7f6b9;
+  background: rgb(237, 237, 244);
 }
 .main_frame .left_frame {
   /* Left Menu */
@@ -27,6 +28,10 @@
   position: relative;
   width: 305px;
   height: 1315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: white;
 }
 .main_frame .midd_frame {
@@ -50,13 +55,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  /* justify-content: space-around; */
 }
 .main_frame .left_1 {
   position: relative;
   width: 228px;
   height: 267px;
   margin-top: 50px;
-  margin-left: 37px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,9 +117,9 @@
   color: #767676;
 }
 .left-icons {
-    width: 238px;
-    height: 19px;
-    position: relative;
+  width: 238px;
+  height: 19px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,21 +132,21 @@
   width: 24.99px;
   height: 22.8px;
   border-radius: 50%;
-  fill: drop-shadow(0 4px 4px rgb(0, 0,0,0,.25));
+  fill: drop-shadow(0 4px 4px rgb(0, 0, 0, 0, 0.25));
 }
-.icon-1{
-    position: relative;
-    left: 29.17%;
-    right: 27.08%;
-    margin-top: 5.86px;
+.icon-1 {
+  position: relative;
+  left: 29.17%;
+  right: 27.08%;
+  margin-top: 5.86px;
 }
 .main_frame .marginer {
   position: relative;
   width: 220px;
   height: 0px;
-  margin-left: 40px;
-  margin-bottom: 25px;
-  margin-top: 39px;
+  /* margin-left: 40px; */
+  margin-bottom: 15px;
+  margin-top: 25px;
 
   border: 1.5px solid #f0f0f6;
 }
@@ -149,32 +154,357 @@
   position: relative;
   width: 221px;
   height: 126px;
-  margin-left: 44px;
+  display: flex;
   flex-direction: column;
-  /* display: flex; */
-  /* gap: 15px; */
-  background-color: aqua;
+}
+.main_frame .left_2 .left_2-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 25px;
+}
+.main_frame .left_2 .left_2-wrapper .age {
+  /* Yellow */
+  width: 46.5px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 180, 0);
+  color: rgb(43, 43, 43);
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.main_frame .left_2 .left_2-wrapper .residence {
+  width: 80px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 180, 0);
+  /*  */
+  color: rgb(43, 43, 43);
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.main_frame .left_2 .left_2-wrapper .profession {
+  width: 85px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 180, 0);
+  /*  */
+  color: rgb(43, 43, 43);
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.main_frame .left_2 .left_2-wrapper .address {
+  width: 75px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 180, 0);
+  /*  */
+  color: rgb(43, 43, 43);
+  font-family: sans-serif;
+  font-size: 15px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .main_frame .left_3 {
   position: relative;
   width: 220px;
   height: 153px;
   margin-top: 25px;
-  margin-left: 45px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
+.main_frame .left_3 .left_3-heading {
+  width: 95px;
+  height: 22px;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: left;
+  padding: 0;
+}
+
+.main_frame .left_3 .wrapper {
+  margin-top: 10px;
+}
+.main_frame .left_3 .left_3-lang {
+  width: 220px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*  */
+}
+.main_frame .left_3 .left_3-lang .lang {
+  width: 49px;
+  height: 24px;
+  line-height: 24px;
+  color: #767676;
+}
+.main_frame .left_3 .percentage_img {
+  /* Rectangle 7 */
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4px;
+  /* margin-bottom: 10px; */
+}
+.main_frame .left_3 .lang_percentage {
+  width: 38px;
+  height: 24px;
+  font-weight: 400;
+  color: rgb(118, 118, 118);
+}
+
 .main_frame .left_4 {
   position: relative;
   width: 220px;
   height: 252px;
   margin-top: 25px;
-  margin-left: 45px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .main_frame .left_5 {
   position: relative;
+  right: 15px;
   width: 186px;
   height: 148px;
-  margin-left: 45px;
-  background-color: aqua;
+  /* background-color: aqua; */
+}
+.main_frame .left_5-container {
+}
+.main_frame .left_5-container .container_wrapper {
+  width: 186px;
+  height: 24px;
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-around; */
+
+  align-items: center;
+}
+.main_frame .left_5-container .container_wrapper .skill_text {
+  size: 15px;
+  color: rgba(118, 118, 118, 1);
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 220px;
+  height: 40px;
+  background: rgba(255, 180, 0, 1);
+}
+.dowload_icon {
+  width: 15px;
+  height: 15px;
+}
+
+/* MIDD FRAME */
+.my_page {
+  position: relative;
+
+  width: 970px;
+  height: 467px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 1);
+}
+.my_page .intro {
+  width: 500px;
+}
+.my_page .intro .about_me {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 123.6%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgba(43, 43, 43, 1);
+}
+.my_page .intro .desciption {
+  width: 424.44px;
+  height: 85.61px;
+  color: rgb(118, 118, 118);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+.my_page .intro .hire_btn {
+  /* Button/Book Me */
+  width: 154px;
+  height: 51px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10;
+  padding: 16px 32px 16px 32px;
+  border-radius: 5px;
+  border: 0px solid rgb(255, 180, 0);
+
+  /* Yellow */
+  background: rgb(255, 180, 0);
+}
+.icon1 {
+  position: absolute;
+  bottom: 400px;
+  left: 36px;
+}
+.icon2 {
+  position: absolute;
+  bottom: 380px;
+  left: 500px;
+}
+.icon3 {
+  position: absolute;
+  left: 350px;
+  bottom: 100px;
+}
+.icon4 {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+.icon5 {
+  position: absolute;
+  right: 25px;
+  bottom: 360px;
+}
+.icon6 {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+}
+.my_service {
+}
+/* my Service */
+
+.service {
+  width: 970px;
+  height: 655px;
+  margin-top: 148px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service .my_service {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service .my_service .service_title {
+  width: 193px;
+  height: 40px;
+  color: rgb(43, 43, 43);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 123.6%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.service .my_service .service_descrition {
+  width: 438px;
+  height: 68px;
+  color: rgb(118, 118, 118);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.service .service_box {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.service .service_box .box1 {
+  width: 310px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  margin: 5px;
+}
+
+.service .service_box .box1 .service_titles {
+  width: 158px;
+  height: 22px;
+  color: rgb(43, 43, 43);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 123.6%;
+  letter-spacing: 0%;
+  text-align: center;
+
+  text-transform: capitalize;
+}
+.service .service_box .box1 .service_desc {
+  width: 246px;
+  height: 24px;
+  color: rgb(118, 118, 118);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.main_frame .right_frame .contrast {
+  width: 30px;
+  height: 30px;
+  margin-top: 60px;
+}
+.main_frame .right_frame .mode {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+.icon_link{
+    /* margin-top: 25px; */
+    width: 34px;
+    height: 34px;
+}.Popup{
+    position: relative;
+    top:35px
 }

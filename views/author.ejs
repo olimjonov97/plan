@@ -61,21 +61,265 @@
             </div>
           </div>
           <div class="marginer"></div>
-
-          <div class="left_2"></div>
+          <!-- container 2 -->
+          <div class="left_2">
+            <div class="left_2-wrapper">
+              <span class="age">Age:</span>
+              <span class="text-value"><%=user.age%></span>
+            </div>
+            <div class="left_2-wrapper">
+              <span class="residence">Residence:</span>
+              <span class="text-value"><%=user.residence%></span>
+            </div>
+            <div class="left_2-wrapper">
+              <span class="profession">Profession:</span>
+              <span class="text-value"><%=user.profession%></span>
+            </div>
+            <div class="left_2-wrapper">
+              <span class="address">Address:</span>
+              <span class="text-value"><%=user.address%></span>
+            </div>
+          </div>
           <div class="marginer"></div>
 
-          <div class="left_3"></div>
+          <!-- container 3 -->
+          <div class="left_3">
+            <div class="left_3-heading"><h3>Languages</h3></div>
+            <div class="wrapper">
+              <div class="left_3-lang">
+                <span class="lang"><%=user.languages[0]%></span>
+                <span class="lang_percentage">100%</span>
+              </div>
+              <div class="percentage_img">
+                <img src="/author/images/lang100.png" alt="img" />
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="left_3-lang">
+                <span class="lang"><%=user.languages[1]%></span>
+                <span class="lang_percentage">80%</span>
+              </div>
+              <div class="percentage_img">
+                <img src="/author/images/lang80.svg" alt="img" />
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="left_3-lang">
+                <span class="lang"><%=user.languages[2]%></span>
+                <span class="lang_percentage">60%</span>
+              </div>
+              <div class="percentage_img">
+                <img src="/author/images/lang60.svg" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <!-- container 4 -->
+          <div class="left_4">
+            <div class="left_3">
+              <div class="left_3-heading"><h3>Skills</h3></div>
+              <div class="wrapper">
+                <div class="left_3-lang">
+                  <span class="lang"><%=user.skills[0]%></span>
+                  <span class="lang_percentage">90%</span>
+                </div>
+                <div class="percentage_img">
+                  <img src="/author/images/html90.svg" alt="img" />
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="left_3-lang">
+                  <span class="lang"><%=user.skills[1]%></span>
+                  <span class="lang_percentage">85%</span>
+                </div>
+                <div class="percentage_img">
+                  <img src="/author/images/css85.svg" alt="img" />
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="left_3-lang">
+                  <span class="lang"><%=user.skills[2]%></span>
+                  <span class="lang_percentage">80%</span>
+                </div>
+                <div class="percentage_img">
+                  <img src="/author/images/js80.svg" alt="img" />
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="left_3-lang">
+                  <span class="lang"><%=user.skills[3]%></span>
+                  <span class="lang_percentage">75%</span>
+                </div>
+                <div class="percentage_img">
+                  <img src="/author/images/php75.svg" alt="img" />
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="left_3-lang">
+                  <span class="lang"><%=user.skills[4]%></span>
+                  <span class="lang_percentage">85%</span>
+                </div>
+                <div class="percentage_img">
+                  <img src="/author/images/css85.svg" alt="img" />
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="marginer"></div>
 
-          <div class="left_4"></div>
-          <div class="marginer"></div>
+          <div class="left_5">
+            <div class="left_3-heading"><h3>Extra Skills</h3></div>
+            <div class="left_5-container">
+              <div class="container_wrapper">
+                <img
+                  class="skill_icon"
+                  src="/author/images/skill_icon.svg"
+                  alt="skil_icon"
+                />
+                <div class="skill_text"><%=user.extra_skills[0]%></div>
+              </div>
+            </div>
+            <div class="left_5-container">
+              <div class="container_wrapper">
+                <img
+                  class="skill_icon"
+                  src="/author/images/skill_icon.svg"
+                  alt="skil_icon"
+                />
+                <div class="skill_text"><%=user.extra_skills[1]%></div>
+              </div>
+            </div>
+            <div class="left_5-container">
+              <div class="container_wrapper">
+                <img
+                  class="skill_icon"
+                  src="/author/images/skill_icon.svg"
+                  alt="skil_icon"
+                />
+                <div class="skill_text"><%=user.extra_skills[2]%></div>
+              </div>
+            </div>
+            <div class="left_5-container">
+              <div class="container_wrapper">
+                <img
+                  class="skill_icon"
+                  src="/author/images/skill_icon.svg"
+                  alt="skil_icon"
+                />
 
-          <div class="left_5"></div>
+                <div class="skill_text"><%=user.extra_skills[3]%></div>
+              </div>
+            </div>
+          </div>
           <div class="marginer"></div>
+          <button class="btn">
+            <span>DOWNLOAD CV</span>
+            <img class="dowload_icon" src="/author/images/d_icon.svg" alt="" />
+          </button>
         </div>
-        <div class="midd_frame"></div>
-        <div class="right_frame"></div>
+        <div class="midd_frame">
+          <div class="my_page">
+            <img class="icon1" src="/author/icon/icon1.svg" alt="" />
+            <img class="icon2" src="/author/icon/icon2.svg" alt="" />
+            <img class="icon3" src="/author/icon/icon3.svg" alt="" />
+            <img class="icon4" src="/author/icon/icon4.svg" alt="" />
+            <img class="icon5" src="/author/icon/icon5.svg" alt="" />
+            <img class="icon6" src="/author/icon/icon2.svg" alt="" />
+            <div class="intro">
+              <h1 class="about_me">Doctor neurologists in OHSU Hospital</h1>
+              <p class="desciption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+                suspendisse nunc lectus.
+              </p>
+              <button class="hire_btn">
+                HIRE ME <img src="/author/images/pointer.png" alt="" />
+              </button>
+            </div>
+            <img src="/author/images/my_img.png" alt="" />
+          </div>
+          <div class="service">
+            <div class="my_service">
+              <h2 class="service_title">My Services</h2>
+              <p class="service_descrition">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. lorem
+                ipsum
+              </p>
+            </div>
+            <div class="service_box">
+              <div class="box1">
+                <img
+                  width="68"
+                  height="68"
+                  src="/author/icon/coding1.svg"
+                  alt=""
+                />
+                <h3 class="service_titles"><%=user.title[0]%></h3>
+                <p class="service_desc"><%=user.services[0]%></p>
+              </div>
+              <div class="box1">
+                <img
+                  width="68"
+                  height="68"
+                  src="/author/icon/illustration.svg"
+                  alt=""
+                />
+                <h3 class="service_titles"><%=user.title[1]%></h3>
+                <p class="service_desc"><%=user.services[1]%></p>
+              </div>
+              <div class="box1">
+                <img
+                  width="68"
+                  height="68"
+                  src="/author/icon/Icons_Microphone.png"
+                  alt=""
+                />
+                <h3 class="service_titles"><%=user.title[2]%></h3>
+                <p class="service_desc"><%=user.services[2]%></p>
+              </div>
+              <div class="box1">
+                <img
+                  width="68"
+                  height="68"
+                  src="/author/icon/game.png"
+                  alt=""
+                />
+                <h3 class="service_titles"><%=user.title[3]%></h3>
+                <p class="service_desc"><%=user.services[3]%></p>
+              </div>
+              <div class="box1">
+                <img
+                  width="68"
+                  height="68"
+                  src="/author/icon/Icons_Photographer.png"
+                  alt=""
+                />
+                <h3 class="service_titles"><%=user.title[4]%></h3>
+                <p class="service_desc"><%=user.services[4]%></p>
+              </div>
+              <div class="box1">
+                <!-- <img width="68" height="68" src="/author/icon/coding1.svg" alt=""> -->
+                <h3 class="service_titles"><%=user.title[5]%></h3>
+                <p class="service_desc"><%=user.services[5]%></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_frame">
+            <div class="contrast" >
+                <img src="/author/icon/Contrast.png" alt="">
+            </div>
+          <div class="mode">
+            <a class="Popup"> <img src="/author/icon/Popup.png" alt="" /></a>
+            <a class="icon_link" > <img src="/author/icon/Home.png" alt="" /></a>
+            <a class="icon_link"> <img src="/author/icon/Service.png" alt="" /></a>
+            <a class="icon_link"> <img src="/author/icon/Cv.png" alt="" /></a>
+            <a class="icon_link"> <img src="/author/icon/Portfolio.png" alt="" /></a>
+            <a class="icon_link"> <img src="/author/icon/Blog.png" alt="" /></a>
+            <a class="icon_link"> <img src="/author/icon/Contact.png" alt="" /></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>

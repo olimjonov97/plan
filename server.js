@@ -27,6 +27,7 @@ app.use(express.urlencoded({ extended: true })); //html form
 app.set("views", "views");
 app.set("view engine", "ejs");
 
+
 // 4. routing
 // app.get("/hello", function (req, res) {
 //   res.end("<h1>Hello World by  Arorkon</h1>");
