@@ -22,23 +22,24 @@ function maslahatBering(a, callback) {
   } else if (a > 50 && a <= 60) {
     callback(null, list[4]);
   } else {
-      setInterval(function () { // non stop looping
-        callback(null, list[5]);
-      }, 1000);
+    setInterval(function () {
+      // non stop looping
+      callback(null, list[5]);
+    }, 1000);
     // setTimeout(function () {
     //   callback(null, list[5]);
     // }, 5000);
   }
 }
-console.log("passed here 0");
-maslahatBering(65, (err, data) => {
-  if (err) {
-    console.log("ERROR", err);
-  } else {
-    console.log("Javob:", data);
-  }
-});
-console.log("passed here 1 ");
+// console.log("passed here 0");
+// maslahatBering(65, (err, data) => {
+//   if (err) {
+//     console.log("ERROR", err);
+//   } else {
+//     console.log("Javob:", data);
+//   }
+// });
+// console.log("passed here 1 ");
 
 // >>>>>>>>>>>>> asynchronous functions  <<<<<<<<<
 
@@ -75,7 +76,7 @@ console.log("passed here 1 ");
 // console.log("passed here 1 ");
 // async function run(){
 
-//     let javob = await maslahatBering(65); // call 
+//     let javob = await maslahatBering(65); // call
 //     console.log(javob);
 //     // javob = await maslahatBering(31);
 //     // console.log(javob);
@@ -84,3 +85,17 @@ console.log("passed here 1 ");
 
 // };
 // run()
+
+// Task A
+let count = 0;
+function countLetter(p1, p2) {
+  console.log(p1, p2);
+  for (let i = 0; i < p2.length; i++) {
+    if (p2[i] === p1) {
+      console.log(p2[i]);
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countLetter("e", "engineer",count));
