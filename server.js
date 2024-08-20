@@ -37,7 +37,7 @@ app.set("view engine", "ejs");
 // });
 const server = http.createServer(app);
 app.post("/create-item", (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   res.json({ test: "success" });
 });
 
