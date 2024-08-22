@@ -25,17 +25,37 @@ app.set("view engine", "ejs");
 // app.get("/gift", function (req, res) {
 //   res.end("<h1>siz sovgalar sahifasidasiz</h1>");
 // });
-
+//app.get("/author", (req, res) => {
+//   res.render("author", { user: user });
+// });
 app.post("/create-item", (req, res) => {
   // TODO: code with db here
+  console.log(req.body);
+  const newReja = req.body.reja;
+  db.collection("plans").insertOne({reja:newReja, },(err,data)=>{
+    if (err) {
+      console.log(err);
+      res.end("something went wrong");
+    } else {
+      
+      res.end("successfully added");
+    }
+  })
 
 });
 
 app.get("/", function (req, res) {
-  res.render("reja");
+  db.collection("plans").find().toArray((err,data)=>{
+    if(err){
+      console.log(err);
+      res.end("something went wrong");
+    }else{
+      console.log(data)
+      res.render("reja");
+
+    }
+  })
 });
-app.get("/author", (req, res) => {
-  res.render("author", { user: user });
-});
+
 
 module.exports = app;
