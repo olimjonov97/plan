@@ -42,7 +42,7 @@ app.post("/create-item", (req, res) => {
 });
 
 app.get('/',function(req,res){
-    res.render("harid")
+    res.render("reja")
 })
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
@@ -50,5 +50,5 @@ app.get("/author", (req, res) => {
 
 let PORT = 3000;
 server.listen(PORT, function () {
-  console.log(`Server 3000 Portda Muvafaqiyyatli ishlayapti:${PORT}`);
+  console.log(`Server 3000 Portda Muvafaqiyyatli ishlayapti:${PORT}, http://localhost:${PORT}`);
 });
