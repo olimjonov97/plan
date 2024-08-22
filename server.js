@@ -4,7 +4,7 @@ const http = require("http");
 const mongodb = require("mongodb");
 let db;
 const connectionString =
-  "mongodb+srv://AbrorkhonDev:<db_password>@cluster0.5csby.mongodb.net/Reja?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://AbrorkhonDev:abrorkhon!97@cluster0.5csby.mongodb.net/Reja?retryWrites=true&w=majority&appName=Cluster0";
 mongodb.connect(
   connectionString,
   { useNewUrlParser: true, useUnifiedTopology: true },
@@ -26,4 +26,4 @@ mongodb.connect(
     }
   }
 );
-//mongodb+srv://AbrorkhonDev:<db_password>@cluster0.5csby.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+

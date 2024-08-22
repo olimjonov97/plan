@@ -29,8 +29,10 @@ app.set("view engine", "ejs");
 //   res.render("author", { user: user });
 // });
 app.post("/create-item", (req, res) => {
+
   // TODO: code with db here
-  console.log(req.body);
+  // console.log(req.body);
+  console.log("user entered /create");
   const newReja = req.body.reja;
   db.collection("plans").insertOne({reja:newReja, },(err,data)=>{
     if (err) {
@@ -45,13 +47,14 @@ app.post("/create-item", (req, res) => {
 });
 
 app.get("/", function (req, res) {
+  console.log('user entered /')
   db.collection("plans").find().toArray((err,data)=>{
     if(err){
       console.log(err);
       res.end("something went wrong");
     }else{
-      console.log(data)
-      res.render("reja");
+      // console.log(data)
+      res.render("reja",  {items:data});
 
     }
   })
