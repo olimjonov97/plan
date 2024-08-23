@@ -1,7 +1,7 @@
 console.log("Frontend JS ishga tushdi");
 
 function itemTemplate(item) {
-//   console.log("item value", item);
+  //   console.log("item value", item);
   return ` <li
     class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
     <span class="item-text"> ${item.reja}</span>
@@ -29,12 +29,35 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
       document
         .getElementById("item-list")
         .insertAdjacentHTML("beforeend", itemTemplate(response.data));
-      console.log("response >> ", response);
+
       createField.value = "";
       createField.focus();
     })
     .catch((err) => {
-      console.log(err)
+      console.log(err);
       console.log("Iltimos yana harakat qiling");
     });
+});
+
+document.addEventListener("click", function (e) {
+  //delete oper
+
+  console.log(e.target);
+  if (e.target.classList.contains("delete-me")) {
+    if (confirm("Aniq o'chirmoqchimisiz")) {
+      axios
+        .post("/delete-item", { id: e.target.getAttribute("data-id") })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {
+          console.log("iltimos qaytadan delete qiling");
+        });
+    }
+  }
+  //edit-oper
+  if (e.target.classList.contains("edit-me")) {
+    alert("siz edit-me tugmasini bosdingiz");
+  }
 });
