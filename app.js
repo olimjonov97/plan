@@ -3,7 +3,6 @@ const express = require("express");
 const res = require("express/lib/response");
 const app = express();
 
-
 // const { render } = require("ejs");
 
 // MongoDB connect
@@ -29,36 +28,29 @@ app.set("view engine", "ejs");
 //   res.render("author", { user: user });
 // });
 app.post("/create-item", (req, res) => {
-
   // TODO: code with db here
   // console.log(req.body);
   console.log("user entered /create");
-  const newReja = req.body.reja;
-  db.collection("plans").insertOne({reja:newReja, },(err,data)=>{
-    if (err) {
-      console.log(err);
-      res.end("something went wrong");
-    } else {
-      
-      res.end("successfully added");
-    }
-  })
-
+  const new_reja = req.body.reja;
+  db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+    // console.log(data.ops);
+    res.json(data.ops[0]);
+  });
 });
 
 app.get("/", function (req, res) {
-  console.log('user entered /')
-  db.collection("plans").find().toArray((err,data)=>{
-    if(err){
-      console.log(err);
-      res.end("something went wrong");
-    }else{
-      // console.log(data)
-      res.render("reja",  {items:data});
-
-    }
-  })
+  console.log("user entered /");
+  db.collection("plans")
+    .find()
+    .toArray((err, data) => {
+      if (err) {
+        // console.log(err);
+        res.end("something went wrong");
+      } else {
+        // console.log(data)
+        res.render("reja", { items: data });
+      }
+    });
 });
-
 
 module.exports = app;

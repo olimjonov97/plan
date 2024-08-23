@@ -13,6 +13,7 @@
 //   return count;
 // }
 // console.log(countLetter("e", "engineer",count));
+
 let count = 0;
 function countNumber(myString) {
   console.log();

@@ -32,17 +32,19 @@
           </div>
         </form>
       </div>
-      
+
       <ul id="item-list" class="list-group pb-5">
         <% items.map(function(item){ %>
-          
 
         <li
           class="list-group-item list-group-item-info d-flex align-items-center justify-content-between"
         >
           <span class="item-text"> <%=item.reja%></span>
           <div>
-            <button data-id="<%=items._id%>" class="edit-me btn btn-secondary btn-sm mr-1">
+            <button
+              data-id="<%=items._id%>"
+              class="edit-me btn btn-secondary btn-sm mr-1"
+            >
               O'zgartirish
             </button>
             <button class="delete-me btn btn-danger btn-sm">O'chirish</button>
@@ -50,9 +52,17 @@
         </li>
         <% }) %>
       </ul>
-      <button data-id="<%=items._id%>" id="clean-all" class="btn btn-danger" style="border-radius: 20px">
+      <button
+        data-id="<%=items._id%>"
+        id="clean-all"
+        class="btn btn-danger"
+        style="border-radius: 20px"
+      >
         Hamma Rejalarni O'chirish
       </button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="/browser.js"></script>
   </body>
 </html>
