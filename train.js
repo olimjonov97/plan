@@ -1,5 +1,3 @@
-
-
 // Task A
 // let count = 0;
 // function countLetter(p1, p2) {
@@ -13,18 +11,68 @@
 //   return count;
 // }
 // console.log(countLetter("e", "engineer",count));
+//Task B >>
+// let count = 0;
+// function countNumber(myString) {
+//   console.log();
+//   for (let i = 0; i < myString.length; i++) {
+//     console.log(myString[i]);
+//     if (myString[i] >= "0" && myString[i] <= '9') {
+//       console.log('number', myString[i]);
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// countNumber("ad2a54y79wet0sfgb9")
+// console.log(count)
 
-let count = 0;
-function countNumber(myString) {
-  console.log();
-  for (let i = 0; i < myString.length; i++) {
-    console.log(myString[i]);
-    if (myString[i] >= "0" && myString[i] <= '9') {
-      console.log('number', myString[i]);
-      count++;
-    }
-  }
-  return count;
+// Task C Class shop 
+
+function currentTime() {
+  const now = new Date();
+  const hour = now.getHours();
+  const minute = now.getMinutes();
+  return `${hour}:${minute}`;
 }
-countNumber("ad2a54y79wet0sfgb9")
-console.log(count)
+class Shop {
+  constructor(non, lagmon, cola, time) {
+    this.products = {
+      non: non,
+      lagmon: lagmon,
+      cola: cola,
+      time: time,
+    };
+  }
+
+  leftProducts() {
+    console.log(
+      `Hozir ${this.products.time} da ${this.products.non}ta non ${this.products.lagmon} ta Lagmon ${this.products.cola}ta Cola mavjud!`
+    );
+  }
+  sale(product, amount) {
+    if (this.products[product] >= amount) {
+      this.products[product] -= amount;
+
+      console.log(
+        `Hozir ${this.products.time} da ${amount}ta ${product} sotildi!`
+      );
+    }
+
+    // console.log(product);
+    // console.log(this.products[product], amount);
+  }
+
+  recieved(product, amount) {
+    this.products[product] += amount;
+    console.log(
+      `Hozir ${this.products.time} da ${amount} ta ${product} qabul qilindi jami: ${this.products.lagmon} ta bo'ldi `
+    );
+  }
+}
+// console.log(currentTime());
+const shop = new Shop(4, 5, 2, currentTime());
+
+shop.leftProducts();
+shop.sale("non", 1);
+shop.recieved('lagmon',8)
