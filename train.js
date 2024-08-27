@@ -27,52 +27,67 @@
 // countNumber("ad2a54y79wet0sfgb9")
 // console.log(count)
 
-// Task C Class shop 
+// Task C Class shop
 
-function currentTime() {
-  const now = new Date();
-  const hour = now.getHours();
-  const minute = now.getMinutes();
-  return `${hour}:${minute}`;
-}
-class Shop {
-  constructor(non, lagmon, cola, time) {
-    this.products = {
-      non: non,
-      lagmon: lagmon,
-      cola: cola,
-      time: time,
-    };
-  }
+// function currentTime() {
+//   const now = new Date();
+//   const hour = now.getHours();
+//   const minute = now.getMinutes();
+//   return `${hour}:${minute}`;
+// }
+// class Shop {
+//   constructor(non, lagmon, cola, time) {
+//     this.products = {
+//       non: non,
+//       lagmon: lagmon,
+//       cola: cola,
+//       time: time,
+//     };
+//   }
 
-  leftProducts() {
-    console.log(
-      `Hozir ${this.products.time} da ${this.products.non}ta non ${this.products.lagmon} ta Lagmon ${this.products.cola}ta Cola mavjud!`
-    );
-  }
-  sale(product, amount) {
-    if (this.products[product] >= amount) {
-      this.products[product] -= amount;
+//   leftProducts() {
+//     console.log(
+//       `Hozir ${this.products.time} da ${this.products.non}ta non ${this.products.lagmon} ta Lagmon ${this.products.cola}ta Cola mavjud!`
+//     );
+//   }
+//   sale(product, amount) {
+//     if (this.products[product] >= amount) {
+//       this.products[product] -= amount;
 
-      console.log(
-        `Hozir ${this.products.time} da ${amount}ta ${product} sotildi!`
-      );
-    }
+//       console.log(
+//         `Hozir ${this.products.time} da ${amount}ta ${product} sotildi!`
+//       );
+//     }
 
-    // console.log(product);
-    // console.log(this.products[product], amount);
-  }
+//     // console.log(product);
+//     // console.log(this.products[product], amount);
+//   }
 
-  recieved(product, amount) {
-    this.products[product] += amount;
-    console.log(
-      `Hozir ${this.products.time} da ${amount} ta ${product} qabul qilindi jami: ${this.products.lagmon} ta bo'ldi `
-    );
-  }
-}
+//   recieved(product, amount) {
+//     this.products[product] += amount;
+//     console.log(
+//       `Hozir ${this.products.time} da ${amount} ta ${product} qabul qilindi jami: ${this.products.lagmon} ta bo'ldi `
+//     );
+//   }
+// }
 // console.log(currentTime());
-const shop = new Shop(4, 5, 2, currentTime());
+// const shop = new Shop(4, 5, 2, currentTime());
 
-shop.leftProducts();
-shop.sale("non", 1);
-shop.recieved('lagmon',8)
+// shop.leftProducts();
+// shop.sale("non", 1);
+// shop.recieved('lagmon',8)
+
+//TASK_D
+
+function checkContent(par1, par2) {
+  const str1 = par1.split("").sort();
+  const str2 = par2.split("").sort();
+  for (let i = 0; (i = str1.length); i++) {
+    if (str1[i] === str2[i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+console.log(checkContent("hello", "ohlle"));
