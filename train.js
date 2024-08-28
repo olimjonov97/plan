@@ -79,15 +79,23 @@
 
 //TASK_D
 
-function checkContent(par1, par2) {
-  const str1 = par1.split("").sort();
-  const str2 = par2.split("").sort();
-  for (let i = 0; (i = str1.length); i++) {
-    if (str1[i] === str2[i]) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+// function checkContent(par1, par2) {
+//   const str1 = par1.split("").sort();
+//   const str2 = par2.split("").sort();
+//   for (let i = 0; (i = str1.length); i++) {
+//     if (str1[i] === str2[i]) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// }
+// console.log(checkContent("hello", "ohlle"));
+
+
+//TASK_E
+function getReverse(par1){
+  const str= par1.split('').reverse().join('');
+  return str;
 }
-console.log(checkContent("hello", "ohlle"));
+console.log(getReverse("hello"));
