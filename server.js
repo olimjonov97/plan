@@ -17,7 +17,7 @@ mongodb.connect(
       //   console.log(client.db)
       const app = require("./app");
       const server = http.createServer(app);
-      let PORT = 3000;
+      let PORT = 5002;
       server.listen(PORT, function () {
         console.log(
           `Server 3000 Portda Muvafaqiyyatli ishlayapti:${PORT}, http://localhost:${PORT}`
