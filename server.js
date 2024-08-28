@@ -20,10 +20,9 @@ mongodb.connect(
       let PORT = 5002;
       server.listen(PORT, function () {
         console.log(
-          `Server 3000 Portda Muvafaqiyyatli ishlayapti:${PORT}, http://localhost:${PORT}`
+          `Server 5002 Portda Muvafaqiyyatli ishlayapti:${PORT}, http://localhost:${PORT}`
         );
       });
     }
   }
 );
-
