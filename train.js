@@ -92,10 +92,31 @@
 // }
 // console.log(checkContent("hello", "ohlle"));
 
-
 //TASK_E
-function getReverse(par1){
-  const str= par1.split('').reverse().join('');
-  return str;
+// function getReverse(par1){
+//   const str= par1.split('').reverse().join('');
+//   return str;
+// }
+// console.log(getReverse("hello"));
+
+//TASK-F
+function findDoublers(str) {
+  let charCount = {};
+
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+
+    if (charCount[char]) {
+      return true;
+    }
+
+    charCount[char] = 1;
+  }
+
+  return false;
 }
-console.log(getReverse("hello"));
+
+console.log(findDoublers("hello")); // true
+console.log(findDoublers("world")); // false
+console.log(findDoublers("abcde")); // false
+console.log(findDoublers("aabbcc")); // true
